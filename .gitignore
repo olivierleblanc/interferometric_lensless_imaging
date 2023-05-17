@@ -1,0 +1,33 @@
+.vscode/launch.json
+.vscode/settings.json
+
+### Mac
+.DS_Store
+
+### Vi/Emacs
+.swp
+
+### Python
+__pycache__/
+*.npy
+*.npz
+.nfs*
+
+### LaTeX
+*.blg
+*.bbl
+*.aux
+*.auxlock
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.synctex(busy)
+*.fdb_latexmk
+*.md5
+*.toc
+*.asv
+
+### others
+*.pdf
+*.zip
