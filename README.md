@@ -24,7 +24,8 @@ To use the code in this repository, follow these steps:
 
 1. Clone this repository using [``git clone``](https://docs.github.com/fr/repositories/creating-and-managing-repositories/cloning-a-repository) or download the zip file.
 
-2. Create a minimal virtual environment and activate it using the following commands:
+2. Create a minimal virtual environment and activate it. We suggest [conda](https://docs.conda.io/en/latest/), if you want to use [pipenv](https://pipenv.pypa.io/en/latest/) instead, replace step 2. below by the instructions in [pipenv.md](pipenv.md)
+. With ``conda``, use the following commands:
 ```
 conda create --name your_env_name python==3.8.8
 conda activate your_env_name
@@ -33,12 +34,14 @@ pip install -r requirements.txt
 
 This project uses old versions of Python, scipy, and other packages. ``requirements.txt`` ensures you will run the code in a controlled environment.
 
+**Note:** to see the newly create venv, you may need to relaunch your python editor.
+
 To deactivate the environment when you don't want to work on this project:
 ```
 conda deactivate
 ```
 
-1. install my forks of ``pyunlocbox``, ``pyproximal`` and ``pylops`` from Github: 
+3. install my forks of ``pyunlocbox``, ``pyproximal`` and ``pylops`` from Github: 
    * clone each repo from Github or download the zip file
     ```
     git clone https://github.com/olivierleblanc/pyunlocbox.git 
@@ -51,8 +54,8 @@ conda deactivate
     repeat with <br>
     https://github.com/olivierleblanc/pyproximal.git and https://github.com/olivierleblanc/pylops.git 
 
-2. Run the demo Jupyter Notebook (`demo.ipynb`) to see an example of how to use the project functionality.
-3. Explore the project files and directories to find the desired code and resources.
+4. Run the demo Jupyter Notebook (`demo.ipynb`) to see an example of how to use the project functionality.
+5. Explore the project files and directories to find the desired code and resources.
 
 ## Data 
 

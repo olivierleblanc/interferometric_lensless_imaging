@@ -21,8 +21,8 @@ def updir(d, n):
   for _ in range(n):
     d = os.path.dirname(d)
   return d
-sys.path.append(os.path.join(updir(__file__,3),'utils'))
-sys.path.append(updir(__file__,2))
+sys.path.append(os.path.join(updir(os.getcwd(),2),'utils'))
+sys.path.append(updir(os.getcwd(),1))
 
 from interferometric_lensless_imaging import * # ROP projectors, rmdiag,...
 from functions import snr, corr_circ
@@ -30,7 +30,7 @@ from list_utils import * # To save the simulation results in txt files.
 "________________________________________________"
 
 def get_Qs(Vs):
-  path = os.path.join(updir(__file__,2),'Q_vis_bijection.npy')
+  path = os.path.join(updir(os.getcwd(),1),'Q_vis_bijection.npy')
   Q_vis_bijection = np.load(path, allow_pickle=True) 
   aQs = Q_vis_bijection[:,0].astype('int')
   mean_eff_visibility_cardinality = Q_vis_bijection[:,1]

@@ -19,8 +19,8 @@ def updir(d, n):
   for _ in range(n):
     d = os.path.dirname(d)
   return d
-sys.path.append(os.path.join(updir(__file__,3),'utils'))
-sys.path.append(updir(__file__,2))
+sys.path.append(os.path.join(updir(os.getcwd(),2),'utils'))
+sys.path.append(updir(os.getcwd(),1))
 
 from interferometric_lensless_imaging import * # ROP projectors, rmdiag,...
 from utils_data import *

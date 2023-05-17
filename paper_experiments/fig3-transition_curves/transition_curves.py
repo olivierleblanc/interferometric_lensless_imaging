@@ -20,14 +20,14 @@ def updir(d, n):
   for _ in range(n):
     d = os.path.dirname(d)
   return d
-sys.path.append(os.path.join(updir(__file__,3),'utils'))
+sys.path.append(os.path.join(updir(os.getcwd(),2),'utils'))
 
 from interferometric_lensless_imaging import * # ROP projectors, rmdiag,...
 from functions import snr, corr_circ
 "________________________________________________"
 
 def get_Qs(Vs):
-  path = os.path.join(updir(__file__,2),'Q_vis_bijection.npy')
+  path = os.path.join(updir(os.getcwd(),1),'Q_vis_bijection.npy')
   Q_vis_bijection = np.load(path, allow_pickle=True) 
   aQs = Q_vis_bijection[:,0].astype('int')
   mean_eff_visibility_cardinality = Q_vis_bijection[:,1]
@@ -52,7 +52,10 @@ if (__name__ == '__main__'):
     folder = 'simu_results/transition_curves/'
     if (rank==0):
         if not os.path.exists(folder):
-            os.makedirs(folder)
+            try:
+               os.makedirs(folder)
+            except:
+               print()
     filename = 'snrs{:02d}.npy'.format(rank)
 
     print(filename)

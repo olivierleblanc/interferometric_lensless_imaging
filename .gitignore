@@ -1,6 +1,10 @@
 .vscode/launch.json
 .vscode/settings.json
 
+## pip
+Pipfile
+.venv/
+
 ### Mac
 .DS_Store
 
