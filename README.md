@@ -26,8 +26,9 @@ To use the code in this repository, follow these steps:
 
 2. Create a minimal virtual environment and activate it using the following commands:
 ```
-conda create --name your_env_name --file requirements.txt
+conda create --name your_env_name python==3.8.8
 conda activate your_env_name
+pip install -r requirements.txt
 ```
 
 This project uses old versions of Python, scipy, and other packages. ``requirements.txt`` ensures you will run the code in a controlled environment.
