@@ -34,17 +34,17 @@ This project uses old versions of Python, scipy, and other packages. ``requireme
 
 To deactivate the environment when you don't want to work on this project:
 ```
-    conda deactivate
+conda deactivate
 ```
 
 1. install my forks of ``pyunlocbox``, ``pyproximal`` and ``pylops`` from Github: 
    * clone each repo from Github or download the zip file
     ```
-        git clone https://github.com/olivierleblanc/pyunlocbox.git 
+    git clone https://github.com/olivierleblanc/pyunlocbox.git 
     ```
     * then in command line, ensure the created virtual env is activated, then pip install the repo from the fork you just downloaded.
     ```
-        pip install -e /path/to/repo
+    pip install -e /path/to/repo
     ```
 
     repeat with <br>
