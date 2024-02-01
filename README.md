@@ -8,15 +8,14 @@ Please cite the following paper when using the code:
 ## Repository Structure
 
 The repository is organized as follows:
-
-- **images**: images to be reconstructed.
-- **paper_experiments**: code that generated figures 2,3, and 6 of the paper.
-- **reconstructions_demo**: some notebooks that analyze the reconstructions dependency on various parameters.
-- **tests_and_visualizations**: tests, visualizations, and additional code examples.
-- **utils**: utility functions and modules.
-
-
-- **demo.ipynb**: Jupyter Notebook demonstrating the project functionalities.
+```
+|- images/:                      images to be reconstructed.
+|- paper_experiments/:           code that generated figures 2,3, and 6 of the paper.
+|- reconstructions_demo/:        some notebooks that analyze the reconstructions dependency on various parameters.
+|- tests_and_visualizations/:    tests, visualizations, and additional code examples.
+|- utils/:                          utility functions and modules.
+|- demo.ipynb:                   Jupyter Notebook demonstrating the project functionalities.
+```
 
 ## Installation and Usage
 
