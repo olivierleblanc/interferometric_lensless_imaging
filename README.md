@@ -3,7 +3,8 @@
 
 ---
 
-Please cite the following paper when using the code:
+[![image](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/olivierleblanc/interferometric_lensless_imaging/blob/master/LICENSE) [![image](https://img.shields.io/badge/arXiv-2306.12698-red.svg?style=flat)](https://arxiv.org/abs/2306.12698)  
+
 
 ## Repository Structure
 
@@ -58,7 +59,10 @@ conda deactivate
 
 ## Data 
 
-The experimental data can be download [here](https://drive.google.com/drive/folders/1fYSA78RPlp3rA9Baj2oCMKVLMHoInO-Y?usp=share_link). 
+The experimental data can be download
+<a href="https://drive.google.com/drive/folders/1fYSA78RPlp3rA9Baj2oCMKVLMHoInO-Y?usp=share_link"> here
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/768px-Google_Drive_icon_%282020%29.svg.png" width="30px" align="center" >
+</a>
 
 ## Contributions
 
@@ -73,7 +77,7 @@ This project is licensed under the [MIT License](LICENSE).
 Don't hesitate to discuss with me eiter on Github directly or email me at o.leblanc@uclouvain.be.
 
 
-``Remarks:``
-- In the code, you sometimes used the word *diagless* or *dl* that is a synonym of *hollow* matrix. It is related to the debiasing trick explained in the paper.
+> [!NOTE]
+In the code, you sometimes used the word *diagless* or *dl* that is a synonym of *hollow* matrix. It is related to the debiasing trick explained in the paper.
 
 
